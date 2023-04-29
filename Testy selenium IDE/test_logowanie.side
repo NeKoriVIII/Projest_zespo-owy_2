@@ -1,0 +1,690 @@
+{
+  "id": "ef172eb8-eab2-4edd-baed-0712e559c5e9",
+  "version": "2.0",
+  "name": "Projekt Kierunkowy",
+  "url": "https://practicesoftwaretesting.com/",
+  "tests": [{
+    "id": "2bbc6e36-b8d4-44c0-b33a-8993ed70449a",
+    "name": "poprawne logowanie",
+    "commands": [{
+      "id": "89631398-724f-422d-912d-3b510d5312ca",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53480dd1-0b61-4989-b90d-eca06e2123e6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e679a83e-0324-4979-8c4a-e45ce8ad8c41",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be48df8c-0e49-43b2-a06e-2bf3de241ab2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test@example.com"
+    }, {
+      "id": "d691dff2-d1be-4f42-b8f9-8fd31111660f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b0cdc26-2ae1-43b0-b055-601d130742ad",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "38539751-ae9f-4ccd-bc1a-a61d86edf633",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f994b261-0d44-4e08-9033-7e43704ba30d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8f7a854d-566c-493e-aad9-f7a9f3e9e8de",
+    "name": "Logowanie z nieporawnym adresem email",
+    "commands": [{
+      "id": "4a08a71a-0989-4f04-934c-6f6301fbc209",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62a69e43-3794-431d-af4e-86dd39478af8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b74debbd-eacb-4375-973f-bf06b7ba9f52",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc793a64-01ab-4f26-8aeb-db92883e32f6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234@example.com"
+    }, {
+      "id": "b3ae881c-b438-4298-8284-d6ad6d2e1711",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20b5c2e3-7724-4482-88dd-4dd8c4ac3195",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "205f019e-f054-48a8-98a7-63559172bd0d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2058ea91-f4a1-4cae-98f2-2177c0e9b2d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4093380b-1563-49b1-982f-db41d82d2e12",
+    "name": "Logowanie bez wprowadzania adresu email",
+    "commands": [{
+      "id": "f40e5fd9-9ede-472b-9989-fdbc24549e4e",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "029c6c19-5be9-4628-858a-22c3f8ae4313",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37a79d0d-68e5-45a6-974c-b1233045fd92",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26106f61-da1f-4ee0-a5b4-dd197242e63b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "b1ce22a0-fa71-474d-a2e0-d2c9a20af2c0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cac7e880-446b-42d2-927a-c32df28d11a4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0ba66d67-82da-447f-b087-6a6b7e7bc59b",
+    "name": "logowanie z błędnym hasłem",
+    "commands": [{
+      "id": "ec36ef5a-8283-438f-924a-9acfacc53613",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "026b5090-e1fe-44c1-a857-8ff7dcd5e6de",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2de3e2b6-c233-4a07-aea0-0f699dcda766",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03618b2c-ac47-4127-936c-cbe6d856e777",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test@example.pl"
+    }, {
+      "id": "669a8db7-feb9-45ff-a66b-4561f4234a05",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b34c01b4-f158-4a38-9fee-00e804f7fd2a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1q2w3e4r5t6y"
+    }, {
+      "id": "4c307f8b-72c2-4499-af73-ee6ec6988e8a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "265e54e3-2fec-4277-84ef-ef25dc088a1d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4f309130-de69-4801-ba10-5e825cbb4bda",
+    "name": "logowanie bez hasła",
+    "commands": [{
+      "id": "69391eb6-7001-434d-8454-032738f3f388",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c221a808-7e44-4c74-bb45-112443f949b7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34a42147-f2ab-4ff0-bbbd-7233878568a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "117244af-9234-4bbb-9fad-c64400227374",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test@example.com"
+    }, {
+      "id": "5efa889a-eb70-4934-97c1-b61399f58a3d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68390e22-8ecd-4eb5-84a4-c66da2c05756",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5858a31b-46be-4b3c-bd17-3f286b686b32",
+    "name": "logowanie z nieporawnym adresem email i niepoprawnym hasłem",
+    "commands": [{
+      "id": "030b8ab5-4875-4675-b559-a085de3d2180",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c47c595f-dc77-4b7a-9d91-84edc3bd32c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b54a1eab-3249-4e06-850e-e7069a4879ba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee6cea2f-59e3-43a8-b029-f8682e1b9e99",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345@example.com"
+    }, {
+      "id": "d1c221c0-e2e2-4026-8d0b-56028479532e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b71ed126-28e9-4aab-8fdc-2c3a2eabe36d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "fc5ec32e-7e87-416f-8e56-9fd3515c0053",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6801b282-45b5-46ac-bfc3-33085b292d2b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ce28ecb2-b5a3-4604-8c1b-bb32850cf59c",
+    "name": "logowanie bez wprowadzenia loginu i hasła",
+    "commands": [{
+      "id": "2421c706-4820-48f7-919b-0b3ed11cdc3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bebc1b8-bc62-402b-8bb2-b95b7572f96c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fc338c2-c3b6-4bec-adac-bc38ce4996cb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9111f8a7-d11b-4923-b38e-c0a2c3f273fc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a40bcc10-2b54-46d2-804d-ed35abe34596",
+    "name": "logowanie z wprowadzeniem poprawnych danych logowania, zamieninych miejscami( w pole hasło-emial, w polu emial-hasło)",
+    "commands": [{
+      "id": "8908945e-1081-47f1-aa53-415f032e9f6c",
+      "comment": "",
+      "command": "open",
+      "target": "https://practicesoftwaretesting.com/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef5a88e7-6500-4150-8e3d-63b0deba3a82",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Sign in')]",
+      "targets": [
+        ["css=*[data-test=\"nav-sign-in\"]", "css:data-attr"],
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/auth/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64452132-c775-473e-93be-5d2ef17f1340",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c27c9a31-209c-4bcf-a8c0-db508b551b2b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["css=*[data-test=\"email\"]", "css:data-attr"],
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "qwerty"
+    }, {
+      "id": "17ee5e03-0082-4a33-8a94-646e2d9f5778",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe526e92-1cd7-4c54-b895-9cd0d3abc3ea",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='password']",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test@example.com"
+    }, {
+      "id": "72a7e30e-2122-4667-9171-12cdf99d2e3c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Login']",
+      "targets": [
+        ["css=*[data-test=\"login-submit\"]", "css:data-attr"],
+        ["css=.btnSubmit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69929e82-08c8-4188-b042-e690d9d44210",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [],
+  "urls": ["https://practicesoftwaretesting.com/"],
+  "plugins": []
+}
